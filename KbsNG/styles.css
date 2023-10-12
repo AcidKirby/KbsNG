@@ -1,0 +1,232 @@
+body {
+    background-color: white;
+}
+
+.header {
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.title h1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.title p {
+    color: white;
+    margin: 5px 0;
+}
+
+.sign-in {
+    margin-left: auto;
+}
+
+.button {
+    background-color: #7DF9FF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 0;
+}
+
+/* zoekbalk */
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 20px; /* ruimte tussen de zoekbalk en de andere elementen */
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.header {
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.title h1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.title p {
+    color: white;
+    margin: 5px 0;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* zoekbalk in het midden van de header */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 20px; /* ruimte tussen de zoekbalk en de andere elementen */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+}
+
+/* Voeg deze CSS-regels toe voor de categorieën onder de header */
+
+
+.categories {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* slogan onder de header */
+
+.slogan {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.slogan h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+/* Style voor de categorieën */
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.categories a {
+    text-decoration: none; /* Verwijder de onderstreping van de tekst voor links */
+    color: #333; /* kleur van de tekst */
+}
+
+.categories a:hover {
+    color: #0073e6; /* kleur voor de linktekst wanneer je erover zweeft */
+}
+
+/* Voeg deze CSS-regels toe om de "About Us" sectie iets naar beneden te plaatsen */
+
+.about-us {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 30%; /* Pas de breedte aan naar wens */
+    float: right; /* Plaats de sectie aan de rechterkant van het scherm */
+    margin-top: 125px; /* Voeg bovenmarge toe om de sectie naar beneden te verplaatsen */
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Voeg deze CSS-regels toe voor de productsectie aan de linkerkant van het scherm */
+
+.product-section {
+    width: 30%; /* Pas de breedte aan naar wens */
+    float: left; /* Plaats de sectie aan de linkerkant van het scherm */
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    display: block;
+}
+
