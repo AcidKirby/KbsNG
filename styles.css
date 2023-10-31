@@ -1,62 +1,306 @@
 body {
     background-color: white;
-    @font-face {
-        font-family: 'Pixelify Sans';
-        src: local("C:\Users\arion\Downloads\Pixelify_Sans\PixelifySans-VariableFont_wght.ttf");
-        font-weight: auto;
-        font-style: normal;
-    }
+}
 
-    & img {
-        position: absolute;
-        top: 1em;
-        left: 3em;
+.header {
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 
+.logo img {
+    width: 50px;
+    height: 50px;
+}
 
-    }
+.title h1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.title p {
+    color: white;
+    margin: 5px 0;
+}
+
+.sign-in {
+    margin-left: auto;
 }
 
 .button {
     background-color: #7DF9FF;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #7DF9FF;
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 0;
 }
 
-.button1:hover {
-    background-color: #7DF9FF;
-    color: white;
+/* zoekbalk */
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 20px; /* ruimte tussen de zoekbalk en de andere elementen */
 }
 
-h1 {
-    font-family: 'Pixelify Sans', cursive;
-    font-size: 56px;
-    color: #7DF9FF;
-    background-color: transparent;
-    border: 5px ghostwhite;
-    text-align: center;
-}
-div {
-    width: 50px;
-    padding: 15px 16px;
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
     border: none;
-    margin: 10px;
-    position: absolute;
-    top: 13px;
-    right: 3em;
-    text-align: center;
-    text-decoration-color: ghostwhite;
+    outline: none;
 }
+
+.search-bar button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.header {
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.title h1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.title p {
+    color: white;
+    margin: 5px 0;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* zoekbalk in het midden van de header */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 20px; /* ruimte tussen de zoekbalk en de andere elementen */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+}
+
+/* Voeg deze CSS-regels toe voor de categorieën onder de header */
+
+
+.categories {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* slogan onder de header */
+
+.slogan {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.slogan h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+/* Style voor de categorieën */
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.categories a {
+    text-decoration: none; /* Verwijder de onderstreping van de tekst voor links */
+    color: #333; /* kleur van de tekst */
+}
+
+.categories a:hover {
+    color: #0073e6; /* kleur voor de linktekst wanneer je erover zweeft */
+}
+
+/* Voeg deze CSS-regels toe om de "About Us" sectie iets naar beneden te plaatsen */
+
+.about-us {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 30%; /* Pas de breedte aan naar wens */
+    float: right; /* Plaats de sectie aan de rechterkant van het scherm */
+    margin-top: 125px; /* Voeg bovenmarge toe om de sectie naar beneden te verplaatsen */
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Voeg deze CSS-regels toe voor de productsectie aan de linkerkant van het scherm */
+
+.product-section {
+    width: 30%; /* Pas de breedte aan naar wens */
+    float: left; /* Plaats de sectie aan de linkerkant van het scherm */
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    display: block;
+}
+/* Voeg deze CSS-regels toe voor de service- en contactsectie onder aan de pagina */
+
+.service-section {
+    clear: both;
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.blue-stripe {
+    background-color: #0073e6;
+    padding: 20px 0;
+}
+
+.blue-stripe h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.service-content {
+    padding: 20px;
+    font-size: 16px;
+}
+/* Voeg deze CSS-regels toe voor de Azerty-sectie met afbeeldingen en tekst */
+
+.azerty-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.azerty-item {
+    text-align: center;
+}
+
+.azerty-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.azerty-item p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Voeg deze CSS-regels toe voor de Azerty-sectie met afbeeldingen en tekst */
+
+.azerty-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.azerty-item {
+    text-align: center;
+    max-width: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: none;
+}
+
+.azerty-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.azerty-item p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
