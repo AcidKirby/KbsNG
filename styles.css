@@ -226,81 +226,10 @@ ul {
 }
 
 .product-image {
-    max-width: 100%;
     display: block;
-}
-/* Voeg deze CSS-regels toe voor de service- en contactsectie onder aan de pagina */
-
-.service-section {
-    clear: both;
-    background-color: #0073e6;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.blue-stripe {
-    background-color: #0073e6;
-    padding: 20px 0;
-}
-
-.blue-stripe h2 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.service-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
     padding: 20px;
-    font-size: 16px;
-}
-/* Voeg deze CSS-regels toe voor de Azerty-sectie met afbeeldingen en tekst */
-
-.azerty-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-.azerty-item {
-    text-align: center;
-}
-
-.azerty-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.azerty-item p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-/* Voeg deze CSS-regels toe voor de Azerty-sectie met afbeeldingen en tekst */
-
-.azerty-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-.azerty-item {
-    text-align: center;
-    max-width: 30%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background: none;
-}
-
-.azerty-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.azerty-item p {
-    font-size: 18px;
-    margin: 10px 0;
 }
 
