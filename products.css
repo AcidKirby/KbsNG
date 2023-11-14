@@ -1,0 +1,151 @@
+/* Algemene stijlen */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Stijl voor de header */
+.header {
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.title h1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.title p {
+    color: white;
+    margin: 5px 0;
+}
+
+.sign-in {
+    margin-left: auto;
+}
+
+.button {
+    background-color: #7DF9FF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Stijl voor de zoekbalk */
+.search-bar {
+    flex: 1;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 20px; /* Ruimte tussen de zoekbalk en de andere elementen */
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Voeg hier andere specifieke stijlen toe die je nodig hebt voor de productpagina */
+
+/* Voeg hier je algemene stijlen toe */
+
+/* Stijl voor product-items */
+/* Voeg hier je stijlen toe */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Centreer de container horizontaal */
+    align-items: center; /* Centreer de container verticaal */
+    min-height: 100vh;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column; /* Plaats de producten onder elkaar */
+    align-items: center; /* Centreer de producten horizontaal */
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.product-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.additional-info {
+    font-size: 14px;
+    color: #666; /* Lichtgrijze kleur */
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
