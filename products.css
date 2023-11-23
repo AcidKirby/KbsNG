@@ -194,6 +194,11 @@ body {
     background-color: #ddd;
 }
 
+/* Voeg dit toe aan je CSS-bestand */
+#sort-ascending, #sort-descending {
+    cursor: pointer;
+}
+
 
 
 

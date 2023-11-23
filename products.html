@@ -38,28 +38,35 @@
             <li><a href="#" class="filter" data-category="laptops">Alle Laptops</a></li>
             <li><a href="#" class="filter" data-category="telefonie-tablets">Telefonie & Tablets</a></li>
             <li><a href="#" class="filter" data-category="accessoires">Alle Accessoires</a></li>
-        </ul>
-    </div>
+            <!-- Voeg dit toe aan het filter-container gedeelte -->
+                    <!-- ... Andere filters ... -->
+                    <li id="sort-by-price">Sorteer op prijs</li>
+                    <ul id="sort-options" class="hidden">
+                        <li id="sort-ascending">Prijs oplopend</li>
+                        <li id="sort-descending">Prijs aflopend</li>
+                    </ul>
+                </ul>
+            </div>
 
-<div class="product-container">
+    <div class="product-container">
 
-    <!-- Product 1 -->
-    <div class="product">
-        <img src="images/CORE_1.png" alt="Core Product 1">
-        <div class="product-info">
-            <h2>Core Product 1</h2>
-            <p>Price: $19.99</p>
-            <p class="additional-info">
-                15.6 Inch Full HD<br>
-                Intel Core i5 processor<br>
-                RAM: 8 GB<br>
-                256 GB opslag SSD<br>
-                Integrated Graphics<br>
-                QWERTY toetsenbord lay-out
-            </p>
-            <button class="add-to-cart">Add to Cart</button>
+        <!-- Product 1 -->
+        <div class="product" data-category="computer-onderdelen" data-price="19.99">
+            <img src="images/CORE_1.png" alt="Core Product 1">
+            <div class="product-info">
+                <h2>Core Product 1</h2>
+                <p>Price: $19.99</p>
+                <p class="additional-info">
+                    15.6 Inch Full HD<br>
+                    Intel Core i5 processor<br>
+                    RAM: 8 GB<br>
+                    256 GB opslag SSD<br>
+                    Integrated Graphics<br>
+                    QWERTY toetsenbord lay-out
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
         </div>
-    </div>
 
     <!-- Product 2 -->
     <div class="product">

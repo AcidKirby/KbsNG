@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function () {
     const filters = document.querySelectorAll('.filter');
     const products = document.querySelectorAll('.product');
@@ -27,7 +26,29 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
+
+    // Sorteerfunctie voor prijzen
+    const sortByPrice = (direction) => {
+        const sortedProducts = Array.from(products).sort((a, b) => {
+            const priceA = parseFloat(a.getAttribute('data-price'));
+            const priceB = parseFloat(b.getAttribute('data-price'));
+
+            return direction === 'asc' ? priceA - priceB : priceB - priceA;
+        });
+
+        const productContainer = document.querySelector('.product-container');
+        productContainer.innerHTML = '';
+
+        sortedProducts.forEach(product => {
+            productContainer.appendChild(product);
+        });
+    };
+
+    // Event listeners voor sorteerfunctionaliteit
+    document.getElementById('sort-ascending').addEventListener('click', () => sortByPrice('asc'));
+    document.getElementById('sort-descending').addEventListener('click', () => sortByPrice('desc'));
 });
+
 
 
 
