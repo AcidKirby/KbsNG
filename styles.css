@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 50px 60px;
 
 }
 
@@ -37,11 +37,25 @@ body {
     list-style: none;
     float: left;
     display: inline-block;
+    margin: 5px;
 }
 .headerbuttons{
-    margin: 10px;
+    position: absolute;
+    margin: 0;
     padding: 10px;
-    width: 40px;
+    width: 100px;
+    height: 30px;
+    font-size: xx-large;
+    top: 0;
+    right: 0;
+    display: inline-block;
+
+}
+
+.signbutton:hover, .Cartbutton:hover{
+    background-color: #2b90ff;
+
+
 }
 
 /* zoekbalk */
@@ -70,15 +84,6 @@ body {
     cursor: pointer;
 }
 
-
-.header {
-    background-color: #0073e6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px;
-
-}
 
 .left-content {
     display: flex;
@@ -113,7 +118,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    margin: 0 20px; /* ruimte tussen de zoekbalk en de andere elementen */
+    margin: 20px; /* ruimte tussen de zoekbalk en de andere elementen */
+    padding: 10px;
 
 }
 
