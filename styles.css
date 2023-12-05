@@ -13,13 +13,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 60px;
+    padding: 10px 20px;
 
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .title h1 {
@@ -155,10 +155,6 @@ body {
     margin-bottom: 10px;
 }
 
-.categories ul {
-    list-style: none;
-    padding: 0;
-}
 
 .categories li {
     display: inline;
@@ -189,12 +185,16 @@ body {
 .categories ul {
     list-style: none;
     padding: 0;
+    justify-content: center;
+    display: flex;
+
 }
 
 .categories li {
-    display: inline;
+    display: flex;
     margin-right: 10px;
     font-size: 16px;
+    justify-content: center;
 }
 
 .categories a {
@@ -208,16 +208,11 @@ body {
 
 /* Voeg deze CSS-regels toe om de "About Us" sectie iets naar beneden te plaatsen */
 
-.about-us {
-    background-color: #f0f0f0;
-    padding: 20px;
-    width: 30%; /* Pas de breedte aan naar wens */
-    float: right; /* Plaats de sectie aan de rechterkant van het scherm */
-    margin-top: 125px; /* Voeg bovenmarge toe om de sectie naar beneden te verplaatsen */
-}
 
 .about-text {
     padding: 20px;
+    margin: 10px;
+    width: 30%;
 }
 
 .about-text h3 {
@@ -236,6 +231,7 @@ body {
     width: 30%; /* Pas de breedte aan naar wens */
     float: left; /* Plaats de sectie aan de linkerkant van het scherm */
     padding: 20px;
+    justify-content: center;
 }
 
 .product-image {
@@ -244,5 +240,18 @@ body {
     margin-right: auto;
     width: 40%;
     padding: 20px;
+}
+
+.mainpage {
+    margin: 10px;
+    padding: 10px;
+
+
+}
+.frontpageFooter {
+    margin: 0;
+    padding: 5px;
+    background-color: #666666;
+
 }
 
