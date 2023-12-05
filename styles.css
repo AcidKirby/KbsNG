@@ -36,8 +36,11 @@ body {
 .headerbuttons li{
     list-style: none;
     float: left;
-    display: inline-block;
-    margin: 5px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 }
 .headerbuttons{
     position: absolute;
@@ -54,6 +57,7 @@ body {
 
 .signbutton:hover, .Cartbutton:hover{
     background-color: #2b90ff;
+    border-radius: 25%;
 
 
 }
