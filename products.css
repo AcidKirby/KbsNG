@@ -193,6 +193,10 @@ body {
 .filter-container a:hover {
     background-color: #ddd;
 }
+.filter-container a:active {
+    background-color: #878787;
+}
+
 
 /* Voeg dit toe aan je CSS-bestand */
 #sort-ascending, #sort-descending {
