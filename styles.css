@@ -161,8 +161,18 @@ body {
     margin-right: 10px;
     font-size: 16px;
 }
+.Slogan-backdrop{
+    background-image: url("images/nerdBackdrop");
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    margin: 0;
+    position: relative;
 
-/* slogan onder de header */
+
+}
+
+
 
 .slogan {
     text-align: center;
@@ -287,5 +297,19 @@ body {
     padding: 5px;
     border: 1px solid grey;
     border-radius: 5px;
+}
+
+.aanbevolen-producten ul{
+    list-style: none;
+
+}
+
+.aanbevolen-producten {
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: inline-block;
+
 }
 
