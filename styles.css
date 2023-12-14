@@ -54,11 +54,23 @@ body {
     display: inline-block;
 
 }
+.signbutton:link, .Cartbutton:link{
+    color: white;
+}
+
+.signbutton:visited, .Cartbutton:visited{
+    color: white;
+}
 
 .signbutton:hover, .Cartbutton:hover{
     background-color: #2b90ff;
-    border-radius: 25%;
+    border: 2px solid white;
+    border-radius: 20%;
 
+
+}
+.signbutton:active, .Cartbutton:active{
+    background-color: #1b6bc4;
 
 }
 
@@ -70,7 +82,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    margin: 0 20px; /* ruimte tussen de zoekbalk en de andere elementen */
+    margin: 45px;
 }
 
 .search-bar input[type="text"] {
@@ -86,6 +98,12 @@ body {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    font-size: xx-large;
+}
+.search-bar button:hover[type="submit"]{
+    background-color: #2b90ff;
+
+
 }
 
 
@@ -115,31 +133,6 @@ body {
     margin: 5px 0;
 }
 
-.search-bar {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* zoekbalk in het midden van de header */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 20px; /* ruimte tussen de zoekbalk en de andere elementen */
-    padding: 10px;
-
-}
-
-.search-bar input[type="text"] {
-    padding: 10px;
-    border: none;
-    outline: none;
-}
-
-.search-bar button[type="submit"] {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    font-size: x-large;
-    text-align: center;
-}
 
 /* Voeg deze CSS-regels toe voor de categorieën onder de header */
 
@@ -168,25 +161,18 @@ body {
     padding-left: 80px;
     margin: 0;
     position: relative;
-
+    height: 350px;
+    font-size: xx-large;
+    font-family: 'Pixelify Sans', cursive;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+.Slogan-backdrop h2{
+    position: absolute;
+    top: 3em;
 
 }
 
-
-
-.slogan {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f0f0f0;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.slogan h2 {
-    font-size: 18px;
-    margin: 0;
-}
 
 
 
