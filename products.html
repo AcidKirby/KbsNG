@@ -7,29 +7,36 @@
     <title>Products</title>
 </head>
 <body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <header class="header">
     <div class="left-content">
         <div class="logo">
-            <img src="./images/NerdyGadgets_logo.png" alt="NerdyGadgets" width="128px" height="128px">
+            <img src="./images/NerdyGadgets_logo%20trnsprent.png" alt="NerdyGadgets" width="112px" height="112px">
         </div>
         <div class="title">
             <h1>Nerdy Gadgets</h1>
         </div>
     </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search">
-        <button type="submit">Search</button>
+    <div class="headerbuttons">
+        <ul class="headerbuttons1">
+
+            <li><a href="sign%20up.html" class="signbutton"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+
+            <li><a href="#winkelmandje" class="Cartbutton"><ion-icon name="cart-outline"></ion-icon></a></li>
+        </ul>
     </div>
-    <div class="sign-in">
-        <a href="sign%20up.html" class="button">Sign In</a>
+    <div class="search-bar">
+        <input type="text" name="headersearch" placeholder="Search">
+        <button type="submit"><ion-icon name="search-circle-outline"></ion-icon></button>
     </div>
 </header>
 
 <!-- Voeg hier de rest van de inhoud van je productpagina toe -->
 
 <link rel="stylesheet" href="products.css">
-
-<div class="main-container">
+<input type="checkbox" id="my_checkbox" style="display:none;">
+<div class="hidden"  id="hidden">
     <div class="filter-container">
         <h3>Filters</h3>
         <ul>
@@ -39,14 +46,20 @@
             <li><a href="#" class="filter" data-category="telefonie-tablets">Telefonie & Tablets</a></li>
             <li><a href="#" class="filter" data-category="accessoires">Alle Accessoires</a></li>
             <!-- Voeg dit toe aan het filter-container gedeelte -->
-                    <!-- ... Andere filters ... -->
-                    <li id="sort-by-price">Sorteer op prijs</li>
-                    <ul id="sort-options" class="hidden">
-                        <li id="sort-ascending">Prijs oplopend</li>
-                        <li id="sort-descending">Prijs aflopend</li>
-                    </ul>
-                </ul>
-            </div>
+            <!-- ... Andere filters ... -->
+            <li id="sort-by-price">Sorteer op prijs</li>
+            <ul id="sort-options" class="hiddenOptions">
+                <li id="sort-ascending">Prijs oplopend</li>
+                <li id="sort-descending">Prijs aflopend</li>
+            </ul>
+        </ul>
+    </div>
+
+</div>
+
+<label class="filter-button" for="my_checkbox">Filter</label>
+<div class="main-container">
+
 
     <div class="product-container">
 

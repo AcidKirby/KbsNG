@@ -13,11 +13,6 @@ body {
     padding: 10px 20px;
 }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-}
-
 .title h1 {
     font-family: 'Pixelify Sans', cursive;
     font-size: 36px;
@@ -30,30 +25,56 @@ body {
     margin: 5px 0;
 }
 
-.sign-in {
-    margin-left: auto;
-}
+.headerbuttons li{
+    list-style: none;
+    float: left;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
-.button {
-    background-color: #7DF9FF;
-    border: none;
+}
+.headerbuttons{
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: xx-large;
+    top: 0;
+    right: 0;
+    display: inline-block;
+
+}
+.signbutton:link, .Cartbutton:link{
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-/* Stijl voor de zoekbalk */
+.signbutton:visited, .Cartbutton:visited{
+    color: white;
+}
+
+.signbutton:hover, .Cartbutton:hover{
+    background-color: #2b90ff;
+    border: 2px solid white;
+    border-radius: 20%;
+
+
+}
+.signbutton:active, .Cartbutton:active{
+    background-color: #1b6bc4;
+
+}
+
+/* zoekbalk */
+
 .search-bar {
     flex: 1;
     display: flex;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    margin: 0 20px; /* Ruimte tussen de zoekbalk en de andere elementen */
+    margin: 45px;
 }
 
 .search-bar input[type="text"] {
@@ -69,7 +90,30 @@ body {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    font-size: xx-large;
 }
+.search-bar button:hover[type="submit"]{
+    background-color: #2b90ff;
+
+
+}
+
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 112px;
+    height: 112px;
+    image-rendering: optimizeQuality;
+    background-color: #2b90ff;
+    border-radius: 5%;
+    margin-right: 30px;
+}
+
+
 
 /* Voeg hier andere specifieke stijlen toe die je nodig hebt voor de productpagina */
 
@@ -160,7 +204,6 @@ body {
 .filter-container {
     background-color: #f4f4f4;
     padding: 10px;
-    position: fixed;
     left: 0;
     top: 75px; /* Hier kun je de waarde aanpassen om de filtersectie omlaag te verplaatsen */
     height: 100%;
@@ -201,6 +244,37 @@ body {
 /* Voeg dit toe aan je CSS-bestand */
 #sort-ascending, #sort-descending {
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    height: 100px;
+}
+:checked + .hidden {
+    display: block;
+}
+
+.filter-button{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: x-large;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    left: 8em;
+    background-color: #0073e6;
+    color: white;
+
+
+}
+
+.filter-button:hover{
+    background-color: #2b90ff ;
+
+}
+.filter-button:active{
+    background-color: #1b6bc4 ;
 }
 
 
