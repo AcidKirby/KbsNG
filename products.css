@@ -20,6 +20,12 @@ body {
     margin: 0;
 }
 
+.title h1 a:link, .title h1 a:visited{
+    text-decoration: none;
+    color: white;
+
+}
+
 .title p {
     color: white;
     margin: 5px 0;

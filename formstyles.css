@@ -1,10 +1,53 @@
 body{
-
-
+    position: relative;
 
 }
-
 h1 {
-    text-align: center;
-    text-size-adjust: auto;
+    color: #2b90ff;
+    font-family: 'Pixelify Sans', cursive;
 }
+
+.sign-in-box{
+    position: absolute;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center;
+    display: inline;
+    border: 2px solid gray;
+
+
+}
+input[type=email], input[type=password]{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid gray;
+    width: 80%;
+    border-radius: 5px;
+
+}
+input:hover[type=email], input:hover[type=password]{
+    background-color: lightgray;
+
+}
+input[type=submit]{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    color: #2b90ff;
+    border: 2px solid #2b90ff;
+    border-radius: 5px;
+    width: 50%;
+
+}
+
+input:hover[type=submit]{
+    background-color: #2b90ff;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
