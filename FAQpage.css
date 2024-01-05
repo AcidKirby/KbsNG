@@ -1,0 +1,56 @@
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stijl voor de FAQ-sectie */
+.faq-section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.faq-section a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Center de inhoud van de FAQ-secties */
+.faq-section {
+    text-align: center;
+}
+
+.faq-section h2 {
+    text-align: center;
+}
+
+.faq-section p {
+    text-align: center;
+}
+
+
+/* Stijl om de FAQ-sectie weer te geven */
+.hidden {
+    display: block;
+}
