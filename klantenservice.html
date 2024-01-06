@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link href="styles.css" rel="stylesheet"> <!-- Koppel de externe CSS-stijlen van je homepage -->
+  <link href="klantenservice.css" rel="stylesheet"> <!-- Koppel de CSS-stijlen van je FAQ-pagina -->
+</head>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<header class="header">
+  <div class="left-content">
+    <div class="logo">
+      <img src="./images/NerdyGadgets_logo%20trnsprent.png" alt="NerdyGadgets" width="112px" height="112px">
+    </div>
+    <div class="title">
+      <h1><a href="Frontpage.html">  Nerdy Gadgets</a></h1>
+    </div>
+  </div>
+  <div class="headerbuttons">
+    <ul class="headerbuttons1">
+
+      <li><a href="sign%20up.html" class="signbutton"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+
+      <li><a href="#winkelmandje" class="Cartbutton"><ion-icon name="cart-outline"></ion-icon></a></li>
+    </ul>
+  </div>
+  <div class="search-bar">
+    <input type="text" name="headersearch" placeholder="Search">
+    <button type="submit"><ion-icon name="search-circle-outline"></ion-icon></button>
+  </div>
+</header>
+
+<link rel="stylesheet" href="products.css">
+<div id="hidden">
+
+  <body class="klantenservice-page">
+  <div class="container">
+  <h1>Klantenservice Contact Formulier</h1>
+    <label for="fname"><h4>Voornaam</h4></label>
+    <input type="text" id="fname" name="Voornaam" placeholder="Voornaam ..">
+
+    <label for="lname"><h4>Achternaam</h4></label>
+    <input type="text" id="lname" name="Achternaam" placeholder="Achternaam ..">
+
+    <label for="email"><h4>Email </h4></label>
+    <input type="text" id="email" name="Email" placeholder="Email ..">
+
+    <label for="Categorie"><h4>Categorie</h4></label>
+    <select id="Categorie" name="Categorie">
+      <option value="Bezorging">Bezorging</option>
+      <option value="Garantie">Garantie</option>
+      <option value="Betalen">Betalen</option>
+      <option value="Advies">Advies</option>
+      <option value="Overig">Overig</option>
+    </select>
+
+    <label for="subject"><h4>Vraag</h4></label> <br>
+    <textarea id="subject" name="subject" placeholder="Schrijf vraag hier.." style="height:250px; width: 750px;"></textarea> <br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>
