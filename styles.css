@@ -59,7 +59,7 @@ body {
 }
 
 .signbutton:visited, .Cartbutton:visited{
-    color: white;
+   color: white;
 }
 
 .signbutton:hover, .Cartbutton:hover{
@@ -298,6 +298,7 @@ body {
     display: inline-block;
 
 }
+
 
 #bannerImage {
     display: block;
