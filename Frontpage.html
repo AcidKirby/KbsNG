@@ -27,7 +27,8 @@
 
         <li><a href="sign%20up.html" class="signbutton"><ion-icon name="person-circle-outline"></ion-icon></a></li>
 
-            <li><a href="#winkelmandje" class="Cartbutton"><ion-icon name="cart-outline"></ion-icon></a></li>
+            <!-- Jouw huidige link naar de winkelmandpagina -->
+            <li><a href="Cart.php" class="Cartbutton"><ion-icon name="cart-outline"></ion-icon></a></li>
         </ul>
     </div>
 </header>
@@ -50,8 +51,30 @@
 
 <div class="mainpage">
     <div class="Banner">
-        <img src="images/products/IMAC_1.png" alt="Imac" height="125px" width="550">
+        <img src="images/products/IMAC_2.png" id="bannerImage" alt="iMac" height="200px" width="725">
     </div>
+
+    <script>
+        const bannerImages = [
+            "ARTIKEL_BANNER.png",
+            "IMAC_2.png",
+            "SAMSUNG_BANNER.png",
+            "ASUS_BANNER.PNG",
+            "IPHONE_BANNER.png",
+            // Voeg hier meer afbeeldingen toe
+        ];
+
+        let currentIndex = 0;
+        const bannerElement = document.getElementById("bannerImage");
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % bannerImages.length;
+            bannerElement.src = `images/products/${bannerImages[currentIndex]}`;
+        }
+
+        setInterval(changeImage, 5000); // Verandert elke 5 seconden
+    </script>
+
     <div class="aanbevolen-producten">
         <p><b>Aanbevolen Producten</b></p>
         <ul>

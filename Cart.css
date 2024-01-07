@@ -1,0 +1,112 @@
+/* Algemene opmaak voor de winkelwagenpagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Stijlen voor de titel */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Stijlen voor de lege winkelwagenmelding */
+h1[style='margin-left: 35%'] {
+    margin-left: 0;
+}
+
+/* Stijlen voor de "Verder winkelen" link */
+.verderWinkelen {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.verderWinkelen:hover {
+    background-color: #0056b3;
+}
+
+/* Stijlen voor de producten in de winkelwagen */
+#ProductFrame2 {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ProductFrame2 img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.StockItemID {
+    font-size: 14px;
+    color: #666;
+}
+
+.StockItemPriceText {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.StockItemName {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ItemQuantity {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Stijlen voor de knoppen "Vermeerder" en "Verminder" */
+.quantityKnop a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.quantityKnop a:hover {
+    background-color: #0056b3;
+}
+
+.knop {
+    background-color: #ddd;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Stijlen voor de "Bestellen" knop */
+.OrderButton {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.OrderButton input[type='submit'] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.OrderButton input[type='submit']:hover {
+    background-color: #218838;
+}
